@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img_resources/right.png</file>
+        <file>img_resources/left.png</file>
+        <file>img_resources/front.png</file>
+        <file>img_resources/back.png</file>
+        <file>img_resources/ainlogo.png</file>
+        <file>img_resources/khalifa_logo.png</file>
+        <file>img_resources/stop.png</file>
+    </qresource>
+</RCC>

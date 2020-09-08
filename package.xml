@@ -1,0 +1,27 @@
+<package>
+  <name>hospital_robot</name>
+  <version>0.1.0</version>
+  <description>
+	Covid-19 robot gui
+  </description>
+  <maintainer email="muhammad.humais@ku.ac.ae">Muhammad Ahmed Humais</maintainer>
+  <license>BSD</license>
+
+  <author>Muhammad Ahmed Humais</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>qtbase5-dev</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+
+  <run_depend>libqt5-core</run_depend>
+  <run_depend>libqt5-gui</run_depend>
+  <run_depend>libqt5-widgets</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+
+  <export>
+
+  </export>
+</package>
