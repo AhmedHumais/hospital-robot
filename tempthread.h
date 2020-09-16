@@ -6,8 +6,8 @@
 #include <ros/ros.h>
 #include <sensor_msgs/Image.h>
 #include <vector>
-#include "opencv2/objdetect.hpp"
 #include <opencv2/core.hpp>
+#include "opencv2/objdetect.hpp"
 #include "opencv2/highgui.hpp"
 #include "opencv2/imgproc.hpp"
 
@@ -24,13 +24,12 @@ protected:
 
 private:
     static void imageCb(const sensor_msgs::Image::ConstPtr& msg);
-    //void thermalCb(const sensor_msgs::ImageConstPtr& msg);
-    //cv::Mat image, thermal;
+    static void thermalCb(const sensor_msgs::Image::ConstPtr& msg);
     cv::CascadeClassifier face_cascade, eye_cascade;
     ros::NodeHandle nh_;
-    ros::Subscriber image_sub_;
-    static cv::Mat imag;
-    static bool get_img;
+    ros::Subscriber image_sub_, thermal_sub_;
+    static cv::Mat imag, thermal;
+    static bool get_img, get_therm;
 
 };
 

@@ -894,6 +894,12 @@
     <property name="text">
      <string>Take Temperature</string>
     </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="initialButton">
     <property name="geometry">

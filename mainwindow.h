@@ -12,6 +12,7 @@
 #include "emgthread.h"
 #include "statusthread.h"
 #include "goalthread.h"
+#include "tempthread.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -38,6 +39,7 @@ public:
     emgThread ethread;
     statusThread sthread;
     goalThread gthread;
+    tempThread tthread;
 
 private slots:
     void update_robot_status(QString con, QString bat, QString pow_draw);
@@ -74,6 +76,8 @@ private slots:
     void on_emgButton_toggled(bool checked);
 
     void on_autoCheck_toggled(bool checked);
+
+    void on_tempButton_toggled(bool checked);
 
 private:
     Ui::MainWindow *ui;

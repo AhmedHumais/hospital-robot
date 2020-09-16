@@ -14,15 +14,15 @@ MainWindow::MainWindow(QWidget *parent)
     manager_ = new rviz::VisualizationManager( render_panel_ );
     render_panel_->initialize( manager_->getSceneManager(), manager_ );
 
+
+//    cam_ = manager_->createDisplay( "rviz/Image", "camera_feed", true );
+//    cam_->setTopic("camera/color/image_raw","sensor_msgs/Image");
+
     // setting view manager with fixed frame as "map"
-
-    cam_ = manager_->createDisplay( "rviz/Image", "camera_feed", true );
-    cam_->setTopic("camera/color/image_raw","sensor_msgs/Image");
-
     tmanager_ = manager_->getToolManager();
     manager_->initialize();
     manager_->setFixedFrame("map");
-     //show map
+    //show map
     map_ = manager_->createDisplay( "rviz/Map", "Map", true );
     map_->subProp( "Topic")->setValue("map");
 
@@ -244,4 +244,14 @@ void MainWindow::on_emgButton_toggled(bool checked)
 void MainWindow::on_autoCheck_toggled(bool checked)
 {
     enable_auto(checked);
+}
+
+void MainWindow::on_tempButton_toggled(bool checked)
+{
+    if(checked){
+        this->tthread.start();
+    }
+    else{
+        this->tthread.requestInterruption();
+    }
 }
