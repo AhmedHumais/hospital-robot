@@ -1,3 +1,15 @@
+/**
+ * @file rosthread.h
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief header file for thread implementing teleoperation
+ * @class rosThread
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #ifndef ROSTHREAD_H
 #define ROSTHREAD_H
 

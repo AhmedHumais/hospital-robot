@@ -1,3 +1,15 @@
+/**
+ * @file emgthread.h
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief header file for the thread implementing emergency stop function
+ * @class rmgThread
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #ifndef EMGTHREAD_H
 #define EMGTHREAD_H
 

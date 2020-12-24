@@ -1,3 +1,15 @@
+/**
+ * @file tempthread.cpp
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief source file for thread implementing temperature measurement feature
+ * @class tempThread
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #include "tempthread.h"
 
 cv::Mat tempThread::imag;
@@ -100,7 +112,7 @@ void tempThread::run()
                         float temperature = (float)(Temperature[0]-1000)/10.0;
                         char buf[40];
                         sprintf(buf, "Temperature: %.2f", temperature);
-                        cv::putText(imag, buf, cv::Point(30,30), cv::FONT_HERSHEY_COMPLEX_SMALL, 0.8, cv::Scalar(200,200,250), 1);
+                        cv::putText(imag, buf, cv::Point(30,30), cv::FONT_HERSHEY_COMPLEX_SMALL, 0.8, cv::Scalar(0,0,250), 1);
                         qDebug() << "detected forehead";
                     }
                 }

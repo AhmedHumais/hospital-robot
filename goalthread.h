@@ -1,3 +1,15 @@
+/**
+ * @file goalthread.h
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief header file for sending goals using a separate thread
+ * @class goalThread
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #ifndef GOALTHREAD_H
 #define GOALTHREAD_H
 

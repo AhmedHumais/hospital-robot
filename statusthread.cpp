@@ -1,3 +1,15 @@
+/**
+ * @file statusthread.cpp
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief source file for thread implementing status reporting function
+ * @class statusThread
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #include "statusthread.h"
 
 float statusThread::batt_c = 0;

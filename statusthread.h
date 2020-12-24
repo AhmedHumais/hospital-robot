@@ -1,3 +1,15 @@
+/**
+ * @file statusthread.h
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief header file for thread implementing status reporting function
+ * @class statusThread
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #ifndef STATUSTHREAD_H
 #define STATUSTHREAD_H
 

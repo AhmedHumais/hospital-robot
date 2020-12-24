@@ -1,3 +1,14 @@
+/**
+ * @file mainwindow.cpp
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief Main Window source file for user interface callbacks
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
@@ -14,15 +25,11 @@ MainWindow::MainWindow(QWidget *parent)
     manager_ = new rviz::VisualizationManager( render_panel_ );
     render_panel_->initialize( manager_->getSceneManager(), manager_ );
 
-
-//    cam_ = manager_->createDisplay( "rviz/Image", "camera_feed", true );
-//    cam_->setTopic("camera/color/image_raw","sensor_msgs/Image");
-
     // setting view manager with fixed frame as "map"
     tmanager_ = manager_->getToolManager();
     manager_->initialize();
     manager_->setFixedFrame("map");
-    //show map
+    // show map
     map_ = manager_->createDisplay( "rviz/Map", "Map", true );
     map_->subProp( "Topic")->setValue("map");
 
@@ -37,16 +44,10 @@ MainWindow::MainWindow(QWidget *parent)
     goal_position_->subProp("Head Length")->setValue(0.15);
     goal_position_->subProp("Head Radius")->setValue(0.15);
 
-    //show planned path
+    // show planned path
     plan_ = manager_->createDisplay( "rviz/Path", "Planned_path", true );
-  //  plan_->setTopic("/move_base/NavfnROS/plan", "nav_msgs/Path");
-
-    // show camera feed
-//    cam_ = manager_->createDisplay( "rviz/Camera", "camera_feed", true );
-//    cam_->subProp("Topic")->setValue("camera/color/image_raw");
 
     // setting up the tools
-
     initialTool_ = tmanager_->addTool("rviz/SetInitialPose");
     initialTool_->getPropertyContainer()->subProp( "Topic" )->setValue("/initialpose");
     goalTool_ = tmanager_->addTool("rviz/SetGoal");
@@ -209,12 +210,6 @@ void MainWindow::on_cancelButton_pressed()
 {
     gthread.cancel_.store(1);
     //cancel_goal action api to be called
-}
-
-
-void MainWindow::on_tempButton_released()
-{
-    //tempthread to be called
 }
 
 void MainWindow::enable_auto(bool enable){

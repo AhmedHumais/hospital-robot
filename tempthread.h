@@ -1,3 +1,15 @@
+/**
+ * @file tempthread.h
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief header file for thread implementing temperature measurement feature
+ * @class tempThread
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #ifndef TEMPTHREAD_H
 #define TEMPTHREAD_H
 

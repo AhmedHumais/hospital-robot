@@ -1,3 +1,14 @@
+/**
+ * @file mainwindow.h
+ * @author Muhammad Ahmed Humais
+ *         muhammad.humais@ku.ac.ae
+ *         Khalifa University
+ * @brief Main Window header file for user interface callbacks
+ * @date 2020/09/16
+ * @version v1.0
+ * @package hospital_robot
+ */
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -70,8 +81,6 @@ private slots:
     void on_goalButton_released();
 
     void on_cancelButton_pressed();
-
-    void on_tempButton_released();
 
     void on_emgButton_toggled(bool checked);
 
