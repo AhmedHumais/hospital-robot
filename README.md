@@ -11,6 +11,9 @@ GUI for hospital assistance autonomous robot using Jackal UGV
 
 ![GUI Image](https://github.com/AhmedHumais/hospital_robot/blob/master/images/gui.png)
 
+### Temperature Recording with automatic forehead detection using Thermal Camera
 ![Temperature Recroding Image](https://github.com/AhmedHumais/hospital_robot/blob/master/images/Temp_wo_mask.png)
 
+
+### 3D pointclouds using Visual SLAM
 ![3D mapping image](https://github.com/AhmedHumais/hospital_robot/blob/master/images/3D_map2.png)
